@@ -27,9 +27,10 @@
 <!--        </snapshotRepository>-->
 <!--    </distributionManagement>-->
 
+<!--
     <build>
         <plugins>
-            <!-- Unzip source data -->
+            &lt;!&ndash; Unzip source data &ndash;&gt;
             <plugin>
                 <groupId>dev.ikm.maven</groupId>
                 <artifactId>unzip-maven-plugin</artifactId>
@@ -46,7 +47,7 @@
                     </execution>
                 </executions>
             </plugin>
-            <!-- Create Manifest file-->
+            &lt;!&ndash; Create Manifest file&ndash;&gt;
             <plugin>
                 <groupId>dev.ikm.maven</groupId>
                 <artifactId>manifest-maven-plugin</artifactId>
@@ -66,7 +67,7 @@
                     </execution>
                 </executions>
             </plugin>
-            <!-- Assemble and zip data into Tinkar Origin Artifact -->
+            &lt;!&ndash; Assemble and zip data into Tinkar Origin Artifact &ndash;&gt;
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
@@ -110,7 +111,7 @@
                     </execution>
                 </executions>
             </plugin>
-            <!-- Attach Tinkar Origin Artifact to project -->
+            &lt;!&ndash; Attach Tinkar Origin Artifact to project &ndash;&gt;
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>build-helper-maven-plugin</artifactId>
@@ -132,15 +133,16 @@
                     </execution>
                 </executions>
             </plugin>
-            <!-- Deploy to Nexus -->
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-deploy-plugin</artifactId>-->
-<!--                <version>3.1.2</version>-->
-<!--                <configuration>-->
+            &lt;!&ndash; Deploy to Nexus &ndash;&gt;
+&lt;!&ndash;            <plugin>&ndash;&gt;
+&lt;!&ndash;                <groupId>org.apache.maven.plugins</groupId>&ndash;&gt;
+&lt;!&ndash;                <artifactId>maven-deploy-plugin</artifactId>&ndash;&gt;
+&lt;!&ndash;                <version>3.1.2</version>&ndash;&gt;
+&lt;!&ndash;                <configuration>&ndash;&gt;
 
-<!--                </configuration>-->
-<!--            </plugin>-->
+&lt;!&ndash;                </configuration>&ndash;&gt;
+&lt;!&ndash;            </plugin>&ndash;&gt;
         </plugins>
     </build>
+-->
 </project>
